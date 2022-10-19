@@ -66,3 +66,35 @@ while(a < 5) {
     }
     a++
 }
+
+// FUNCTIONS
+// Task 1: Favorite Movie (void functions)
+function printMovieName() {
+let favMovie = "Super Troopers"
+console.log(favMovie)
+}
+printMovieName()
+
+// Task 2: Favorite Band (return functions)
+function getFavoriteBand() {
+    let aBand = prompt("What is your favorite band name?")
+    return aBand
+}
+let favBand = getFavoriteBand()
+console.log(favBand)
+
+// Task 3: Concert (parameters)
+function concertDisplay(musicalAct) {
+    let myStreet = prompt("What is the name of the street you live on?")
+    console.log(`It would be great if ${musicalAct} played a show on ${myStreet}!`)
+}
+concertDisplay(favBand)
+
+// ARRAYS
+// Task 1: Desktop Items
+let desktopItems = ["rubics cube", "flash drive", "pen"]
+console.log(desktopItems[1])
+desktopItems[3] = "Infinity Gauntlet"
+for (let object of desktopItems) {
+    console.log(object)
+}
