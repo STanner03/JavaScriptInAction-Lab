@@ -98,3 +98,24 @@ desktopItems[3] = "Infinity Gauntlet"
 for (let object of desktopItems) {
     console.log(object)
 }
+
+// BOSS FIGHT
+// Task 1: Magic Number
+let magicNumber = Math.floor(Math.random() * 101)
+let guess = 0
+while (true) {
+    guess = prompt("What is the Magic Number?")
+    if (guess < magicNumber) {
+        console.log("Too low!")
+    }
+    else if (guess > magicNumber) {
+        console.log("Too high!")
+    }
+    if (guess == magicNumber) {
+        console.log(`Congratulations! ${guess} was the Magic Number!`)
+        break
+    }
+    else if (guess > magicNumber - 11 && guess < magicNumber + 11){
+        console.log("Getting warmer!")
+    }
+}
